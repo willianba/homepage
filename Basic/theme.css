@@ -1,0 +1,102 @@
+html, body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #222222;
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    display: block;
+    font-family: 'Ubuntu Mono';
+    left: 50%;
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+h1 {
+    color: #ffffff;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 85px;
+    width: auto;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ffffff;
+    opacity: .2;
+    width: 600px;
+}
+
+ul {
+    display: block;
+    margin: 0 auto;
+    width: 600px;
+    font-weight: bold;
+}
+
+li {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 1.5em;
+    line-height: 1.2;
+    list-style: none;
+    margin: 5px;
+}
+
+a {
+    color: #888888;
+    text-decoration: none;
+    transition: .1s;
+    font-weight: normal;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+.searchfield{
+    background: #434343;
+    color: #222222;
+    border: none;
+    display: block;
+    font-size: 1.3em;
+    font-weight: bold;
+    height: 25px;
+    margin: 10px auto;
+    width: 600px;
+    padding: 5px 0 5px 10px;
+}
+
+.youtubefield{
+    background: #434343;
+    color: #222222;
+    border: none;
+    display: block;
+    font-size: 1.3em;
+    font-weight: bold;
+    height: 25px;
+    margin: 10px auto;
+    width: 600px;
+    padding: 5px 0 5px 10px;
+}
+
+.torrentfield{
+    background: #434343;
+    color: #222222;
+    border: none;
+    display: block;
+    font-size: 1.3em;
+    font-weight: bold;
+    height: 25px;
+    margin: 10px auto;
+    width: 600px;
+    padding: 5px 0 5px 10px;
+}

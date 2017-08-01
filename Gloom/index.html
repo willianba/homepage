@@ -1,0 +1,348 @@
+<!doctype html>
+<title>Home</title>
+<head><link href="https://fonts.googleapis.com/css?family=Nova+Mono" rel="stylesheet">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<body>
+	<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
+	<script>
+		window.onkeyup = keyup;
+		var inputTextValue;
+		function keyup(e) {
+			inputTextValue = e.target.value;
+			if (e.keyCode == 13) {
+				/* For Google, uncomment that block
+				window.location = "http://www.google.com/search?q=" + inputTextValue;
+				*/
+				window.location = "https://duckduckgo.com/?q=" + inputTextValue;
+			}
+		}
+	</script>
+
+	<div id="top_bar">
+		<a id="facebook", href="https://www.facebook.com">facebook</a>
+		<a id="youtube", href="https://www.youtube.com">youtube</a>
+		<a id="reddit", href="https://www.reddit.com/">reddit</a>
+		<a id="moodle", href="https://moodle.pucrs.br/login/index.php">moodle</a>
+		<a id="github", href="https://github.com">github</a>
+		<a id="dontpad", href="https://www.dontpad.com">dontpad</a>
+		<a id="udemy", href="https://www.udemy.com">udemy</a>
+		<a id="sharelatex", href="https://pt.sharelatex.com">sharelatex</a>
+</div>
+
+	<div id="logo">
+		<!--Uses text and not an image to speed things up -->
+		<!-- For Google, uncomment that block
+		<span style="color: var(--blue)">G</span>
+		<span style="color: var(--red)">o</span>
+		<span style="color: var(--yellow)">o</span>
+		<span style="color: var(--blue)">g</span>
+		<span style="color: var(--green);)">l</span>
+		<span style="color: var(--red);)">e</span>
+		-->
+		<span style="color: var(--orange)">D</span>
+		<span style="color: var(--orange)">u</span>
+		<span style="color: var(--orange)">c</span>
+		<span style="color: var(--orange)">k</span>
+		<span style="color: var(--white)">D</span>
+		<span style="color: var(--white)">u</span>
+		<span style="color: var(--white)">c</span>
+		<span style="color: var(--white)">k</span>
+		<span style="color: var(--orange)">G</span>
+		<span style="color: var(--orange)">o</span>
+	</div>
+
+	<div>
+		<input id="search_bar", style="search", type="text", spellcheck="false", onKeydown="Javascript: if (event.keyCode == 13) search();", autofocus>
+	</div>
+
+	<div id="icons", style="font-size:48px">
+		<i id="github-icon", class="fa fa-github-square", onclick="Javascript: window.location = 'https://github.com/willianba'"></i>
+		<i id="linkedin", class="fa fa-linkedin-square", onclick="Javascript: window.location = 'https://linkedin.com'"></i>
+		<i id="twitter", class="fa fa-twitter-square", onclick="Javascript: window.location = 'https://twitter.com'"></i>
+    <i id="facebook-icon", class="fa fa-facebook-square", onclick="Javascript: window.location = 'https://facebook.com'"></i>
+		<i id="instagram", class="fa fa-instagram", onclick="Javascript: window.location = 'https://instagram.com'"></i>
+	</div>
+
+
+
+	</body>
+</head>
+
+<style type = "text/css">
+
+	:root {
+		--main-color: #292a44;
+		--main-muted: #aaaaaa;
+		--green: #2de087;
+		--orange: #e88e2c;
+		--red: #e72d2d;
+		--cyan: #6dfedf;
+		--orange:  #e88e2c;
+		--blue: #678bdc;
+		--magenta: #ff6f9f;
+		--violet: #f92672;
+		--yellow: #ffdb7d;
+		--foreground-light: #678bdc;
+		--white: #ffffff;
+	}
+
+	@keyframes rise {
+		0% {opacity:0;}
+		100% {opacity:1;}
+	}
+
+	@keyframes fadein {
+		from {opacity:0.3;}
+		to {opacity:1;}
+	}
+
+	body {
+		background-color: var(--main-color);
+        text-align: center;
+		margin: 0;
+	}
+
+	#top_bar {
+		position: center;
+		font-family: 'SFNS Display', monospace;
+		text-align: center;
+		color: #dc322f;
+		font-size: 12px;
+		padding: 30px;
+		border: 5px solid var(--main-color);
+		background: var(--main-color);
+		box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2);
+
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+
+	a:link , a:visited{
+		text-decoration: none;
+		color: var(--main-muted);
+		background-color:var(--main-color);
+		border-style: 2px solid;
+		border-radius: 3px;
+		padding: 8px;
+		width: 200px;
+		height: 100px;
+
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+
+	}
+
+	#facebook{
+		text-decoration: none;
+		border: 2px solid var(--orange);
+		margin: 5px;
+		transition: 0.5s ease;
+	}
+
+	#youtube {
+		text-decoration: none;
+		border:2px solid var(--red);
+		margin: 5px;
+		transition: 0.5s ease;
+	}
+
+	#reddit {
+		text-decoration: none;
+		border:2px solid var(--violet);
+		margin: 5px;
+		transition: 0.5s ease;
+	}
+
+	#moodle {
+		text-decoration: none;
+		border:2px solid var(--magenta);
+		margin: 5px;
+		transition: 0.5s ease;
+	}
+
+	#github {
+		text-decoration: none;
+		border:2px solid var(--blue);
+		margin: 5px;
+		transition: 0.5s ease;
+	}
+
+	#dontpad {
+		text-decoration: none;
+		border:2px solid var(--cyan);
+		margin: 5px;
+		transition: 0.5s ease;
+	}
+
+	#udemy {
+		text-decoration: none;
+		border:2px solid var(--green);
+		margin: 5px;
+		transition: 0.5s ease;
+	}
+
+	#sharelatex {
+		text-decoration: none;
+		border:2px solid var(--yellow);
+		margin: 5px;
+		transition: 0.5s ease;
+	}
+
+	#facebook:hover {
+		transition: 0.5s ease;
+		text-decoration: none;
+		background-color: var(--orange);
+		color: var(--white);
+	}
+
+	#youtube:hover {
+		transition: 0.5s ease;
+		text-decoration: none;
+		background-color: var(--red);
+		color: var(--white);
+	}
+
+	#reddit:hover {
+		transition: 0.5s ease;
+		text-decoration: none;
+		background-color: #d33682;
+		color: var(--white);
+	}
+
+	#moodle:hover {
+		transition: 0.5s ease;
+		text-decoration: none;
+		background-color: var(--magenta);
+		color: var(--white);
+	}
+
+	#github:hover {
+		transition: 0.5s ease;
+		text-decoration: none;
+		background-color: var(--blue);
+		color: var(--white);
+	}
+
+	#dontpad:hover {
+		transition: 0.5s ease;
+		text-decoration: none;
+		background-color: var(--cyan);
+		color: var(--white);
+	}
+
+	#udemy:hover {
+		transition: 0.5s ease;
+		text-decoration: none;
+		background-color: var(--green);
+		color: var(--white);
+	}
+
+	#sharelatex:hover {
+		text-decoration: none;
+		background-color: var(--yellow);
+		color: var(--white);
+		transition: 0.5s ease;
+	}
+
+	input {
+		font-family: 'SFNS Display', monospace;
+		text-align: center;
+		color: var(--white);
+		background-color: var(--main-color);
+		border: 2px solid var(--main-color);
+		border-radius: 3px;
+		width: 42%;
+		height: 20px;
+		font-size: 14px;
+		padding : 8px;
+		box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.7);
+		position: relative;
+		transition: 0.2s ease;
+	}
+
+	input:focus {
+		box-shadow: 1px 4px 10px 0px rgba(0,0,0,0.7);
+	}
+
+	input:hover {
+		box-shadow: 1px 4px 10px 0px rgba(0,0,0,0.7);
+	}
+
+	#logo {
+		margin-top: 50px;
+		font-family: 'SFNS Display', monospace;
+		font-size: 70px;
+		text-align: center;
+		padding: 50px;
+		animation-name: rise;
+		animation-duration: 0.5s;
+		animation-iteration: 1;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+
+	#big_g {
+		height: 100px;
+		margin-top: 50px;
+	}
+
+	#icons {
+		position: center;
+		font-family: 'Monaco', sans-serif;
+		text-align: center;
+		color: var(--main-muted);
+		font-size: 12px;
+		padding: 30px;
+		background: rgba(0,0,0,0);
+
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+
+	#github-icon ,#linkedin, #twitter, #facebook-icon, #instagram {
+		background-color: rgba(0,0,0,0);
+		color: var(--main-muted);
+		transition: 0.5s ease;
+	}
+
+
+	#github-icon:hover {
+		color: var(--yellow);
+		transition: 0.5s ease;
+	}
+
+	#linkedin:hover {
+		color: var(--blue);
+		transition: 0.5s ease;
+	}
+
+	#twitter:hover {
+		color: var(--cyan);
+		transition: 0.5s ease;
+	}
+
+    #facebook-icon:hover {
+        color: var(--blue);
+        transition: 0.5s ease;
+    }
+
+	#instagram:hover {
+		color: var(--violet);
+		transition: 0.5s ease;
+	}

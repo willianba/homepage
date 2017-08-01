@@ -1,0 +1,75 @@
+<!doctype html>
+<title>Home</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<body>
+	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link rel="stylesheet" href="style.css">
+  </head>
+	<script>
+		window.onkeyup = keyup;
+		var inputTextValue;
+		function keyup(e) {
+			inputTextValue = e.target.value;
+			if (e.keyCode == 13) {
+				/* For Google, uncomment that block
+				window.location = "http://www.google.com/search?q=" + inputTextValue;
+				*/
+				window.location = "https://duckduckgo.com/?q=" + inputTextValue;
+			}
+		}
+	</script>
+
+	<div id="top_bar">
+		<a id="youtube", href="https://www.youtube.com">youtube</a>
+		<a id="dota2", href="https://www.reddit.com/r/DotA2">r/DotA2</a>
+		<a id="android", href="https://www.reddit.com/r/androidthemes">r/androidthemes</a>
+		<a id="wiki", href="https://wikipedia.com">wikipedia</a>
+		<a id="rice", href="https://www.reddit.com/r/unixporn">r/unixporn</a>
+		<a id="xda", href="https://xda-developers.com">xda</a>
+  </div>
+
+	<div id="logo">
+		<!--Uses text and not an image to speed things up -->
+		<!-- For Google, uncomment that block
+		<span style="color: var(--blue)">G</span>
+		<span style="color: var(--red)">o</span>
+		<span style="color: var(--yellow)">o</span>
+		<span style="color: var(--blue)">g</span>
+		<span style="color: var(--green);)">l</span>
+		<span style="color: var(--red);)">e</span>
+		-->
+		<span style="color: var(--orange)">D</span>
+		<span style="color: var(--orange)">u</span>
+		<span style="color: var(--orange)">c</span>
+		<span style="color: var(--orange)">k</span>
+		<span style="color: var(--white)">D</span>
+		<span style="color: var(--white)">u</span>
+		<span style="color: var(--white)">c</span>
+		<span style="color: var(--white)">k</span>
+		<span style="color: var(--orange)">G</span>
+		<span style="color: var(--orange)">o</span>
+	</div>
+
+	<div>
+		<input id="search_bar", style="search", type="text", spellcheck="false", onKeydown="Javascript: if (event.keyCode == 13) search();", autofocus>
+	</div>
+
+	<div id="icons", style="font-size:24px">
+		<i id="email", class="fa fa-envelope", onclick="Javascript: window.location = 'https://inbox.google.com'"></i>
+		<i id="facebook", class="fa fa-facebook", onclick="Javascript: window.location = 'https://facebook.com/'"></i>
+		<i id="whatsapp", class="fa fa-whatsapp", onclick="Javascript: window.location = 'https://web.whatsapp.com/'"></i>
+		<i id="instagram", class="fa fa-instagram", onclick="Javascript: window.location = 'https://instagram.com'"></i>
+		<i id="twitter", class="fa fa-twitter-square", onclick="Javascript: window.location = 'https://twitter.com'"></i>
+    <i id="you", class="fa fa-youtube-play", onclick="Javascript: window.location = 'https://youtube.com'"></i>
+	</div>
+	<div id="icons-above", style="font-size:24px">
+		<i id="reddit", class="fa fa-reddit-alien", onclick="Javascript: window.location = 'https://www.reddit.com'"></i>
+		<i id="github", class="fa fa-github-alt", onclick="Javascript: window.location = 'https://github.com/willianba'"></i>
+		<i id="moodle", class="fa fa-user-circle", onclick="Javascript: window.location = 'https://moodle.pucrs.br/login/index.php'"></i>
+    <i id="udemy", class="fa fa-underline", onclick="Javascript: window.location = 'https://udemy.com'"></i>
+    <i id="sharelatex", class="fa fa-strikethrough", onclick="Javascript: window.location = 'https://pt.sharelatex.com'"></i>
+    <i id="steam", class="fa fa-steam-square", onclick="Javascript: window.location = 'https://steamcommunity.com/'"></i>
+	</div>
+	</body>
+</head>
