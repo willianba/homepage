@@ -235,13 +235,15 @@ body.form #search-form.overlay {
     margin: 2rem 0;
   }
 
-  .categories {
-    grid-template-columns: repeat(2, 300px) 185px;
-  }
+  /* .categories { */
+  /*   grid-template-columns: repeat(2, 300px) 185px; */
+  /* } */
 }
 
-@media (min-width: 1700px) {
-  .categories {
-    grid-template-columns: repeat(5, 250px) 185px;
-  }
-}
+/* @media (min-width: 1700px) { */
+/*   .categories { */
+/*     grid-template-columns: repeat(5, 250px) 185px; */
+/*   } */
+/* } */
+
+/* In case I add more categories, go back here and uncommed these ^ */
